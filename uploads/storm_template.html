@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<title>Storm Agency — менеджмент для Fansly-криейторов</title>
+<script src="0ecb179c-6787-411e-91a6-e8d8c573c679"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx58hK5SAMqbpw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("aa5a671d-9b85-4d0b-93c1-6d23e89ba89d") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx18hK5SAMqbpw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("c3fd64d5-c164-45dc-ae91-e9c817dfd964") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx58hK5SAMqbpw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("aa5a671d-9b85-4d0b-93c1-6d23e89ba89d") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx18hK5SAMqbpw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("c3fd64d5-c164-45dc-ae91-e9c817dfd964") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx58hK5SAMqbpw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("aa5a671d-9b85-4d0b-93c1-6d23e89ba89d") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx18hK5SAMqbpw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("c3fd64d5-c164-45dc-ae91-e9c817dfd964") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx58hK5SAMqbpw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("aa5a671d-9b85-4d0b-93c1-6d23e89ba89d") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/golostext/v7/q5uCsoe9Lv5t7Meb31EcEx18hK5SAMqbpw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("c3fd64d5-c164-45dc-ae91-e9c817dfd964") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tektur/v6/XoH62YHtS7q969kXCjzlV0aSkS_o8OacszacvHPHpYxRTw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("b5c6effc-30d6-4d19-8d54-220b52961397") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tektur/v6/XoH62YHtS7q969kXCjzlV0aSkS_o8OacszicvHPHpYxRTw.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tektur/v6/XoH62YHtS7q969kXCjzlV0aSkS_o8OacszScvHPHpYxRTw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tektur/v6/XoH62YHtS7q969kXCjzlV0aSkS_o8OacszWcvHPHpYxRTw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("432766ce-bc2c-46e0-9113-7b5d6c987e2b") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tektur/v6/XoH62YHtS7q969kXCjzlV0aSkS_o8OacszacvHPHpYxRTw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("b5c6effc-30d6-4d19-8d54-220b52961397") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tektur/v6/XoH62YHtS7q969kXCjzlV0aSkS_o8OacszicvHPHpYxRTw.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tektur/v6/XoH62YHtS7q969kXCjzlV0aSkS_o8OacszScvHPHpYxRTw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tektur/v6/XoH62YHtS7q969kXCjzlV0aSkS_o8OacszWcvHPHpYxRTw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("432766ce-bc2c-46e0-9113-7b5d6c987e2b") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tektur/v6/XoH62YHtS7q969kXCjzlV0aSkS_o8OacszacvHPHpYxRTw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("b5c6effc-30d6-4d19-8d54-220b52961397") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tektur/v6/XoH62YHtS7q969kXCjzlV0aSkS_o8OacszicvHPHpYxRTw.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tektur/v6/XoH62YHtS7q969kXCjzlV0aSkS_o8OacszScvHPHpYxRTw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tektur/v6/XoH62YHtS7q969kXCjzlV0aSkS_o8OacszWcvHPHpYxRTw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("432766ce-bc2c-46e0-9113-7b5d6c987e2b") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tektur/v6/XoH62YHtS7q969kXCjzlV0aSkS_o8OacszacvHPHpYxRTw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("b5c6effc-30d6-4d19-8d54-220b52961397") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tektur/v6/XoH62YHtS7q969kXCjzlV0aSkS_o8OacszicvHPHpYxRTw.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tektur/v6/XoH62YHtS7q969kXCjzlV0aSkS_o8OacszScvHPHpYxRTw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tektur/v6/XoH62YHtS7q969kXCjzlV0aSkS_o8OacszWcvHPHpYxRTw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Tektur';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("432766ce-bc2c-46e0-9113-7b5d6c987e2b") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+body{margin:0;background:#0B0D10}
+a{color:#C9D4E3}a:hover{color:#FFFFFF}
+input::placeholder{color:#5F6672}
+</style>
+</helmet>
+<div style="width: 100%; background: #0B0D10; color: #F1F3F5; font-family: 'Golos Text', sans-serif; font-size: 17px; line-height: 1.6">
+
+  <!-- NAV -->
+  <header style="border-bottom: 1px solid #1D2026">
+    <div style="max-width: 1160px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+      <a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #F1F3F5">
+        <svg width="30" height="30" sc-camel-view-box="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M6 10 H26" stroke="{{accent}}" stroke-width="3" stroke-linecap="round"></path>
+          <path d="M11 16 H26" stroke="{{accent}}" stroke-width="3" stroke-linecap="round"></path>
+          <path d="M6 22 H21" stroke="{{accent}}" stroke-width="3" stroke-linecap="round"></path>
+        </svg>
+        <span style="font-family: 'Tektur', sans-serif; font-weight: 700; font-size: 19px; letter-spacing: 0.06em">STORM</span>
+      </a>
+      <nav style="display: flex; flex-wrap: wrap; gap: 26px; align-items: center; font-size: 15px">
+        <a href="#services" style="text-decoration: none; color: #9AA1AC">Что делаем</a>
+        <a href="#cases" style="text-decoration: none; color: #9AA1AC">Кейсы</a>
+        <a href="#process" style="text-decoration: none; color: #9AA1AC">Процесс</a>
+        <a href="#faq" style="text-decoration: none; color: #9AA1AC">FAQ</a>
+        <a href="#apply" style="text-decoration: none; background: {{accent}}; color: #0B0D10; font-weight: 700; padding: 11px 22px; border-radius: 999px">Оставить заявку</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" style="border-bottom: 1px solid #1D2026; position: relative; overflow: hidden">
+    <svg width="560" height="560" sc-camel-view-box="0 0 560 560" fill="none" aria-hidden="true" style="position: absolute; right: -140px; top: -120px">
+      <circle cx="280" cy="280" r="248" stroke="#1D2026" stroke-width="1.5"></circle>
+      <circle cx="280" cy="280" r="180" stroke="#1D2026" stroke-width="1.5"></circle>
+      <circle cx="280" cy="280" r="112" stroke="#262A32" stroke-width="1.5"></circle>
+      <path d="M120 280 H440" stroke="#262A32" stroke-width="1.5"></path>
+    </svg>
+    <div style="max-width: 1160px; margin: 0 auto; padding: 100px 24px 72px 24px; display: flex; flex-direction: column; gap: 28px; position: relative">
+      <div style="font-family: 'Tektur', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.2em; color: {{accent}}">STORM AGENCY · FANSLY MANAGEMENT</div>
+      <h1 style="margin: 0; font-family: 'Tektur', sans-serif; font-weight: 800; font-size: 62px; line-height: 1.08; max-width: 900px">Контент — твой.<br>Система — наша.</h1>
+      <p style="margin: 0; max-width: 620px; font-size: 20px; color: #B7BEC9">Выстраиваем вокруг твоей страницы на Fansly рабочую машину: трафик, продажи в чатах, цены и защиту. Ты снимаешь 1–2 дня в неделю — остальное делает команда.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 6px">
+        <a href="#apply" style="text-decoration: none; background: {{accent}}; color: #0B0D10; font-weight: 700; font-size: 17px; padding: 17px 34px; border-radius: 999px">Начать зарабатывать</a>
+        <a href="#audit" style="text-decoration: none; border: 1px solid #2E333C; color: #F1F3F5; font-weight: 600; font-size: 17px; padding: 17px 34px; border-radius: 999px">Бесплатный разбор страницы</a>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 0; margin-top: 40px; border: 1px solid #1D2026; border-radius: 14px; background: #101318">
+        <div style="flex: 1 1 200px; padding: 24px 28px; border-right: 1px solid #1D2026; display: flex; flex-direction: column; gap: 4px">
+          <div style="font-family: 'Tektur', sans-serif; font-weight: 700; font-size: 28px; color: {{accent}}">[N]+</div>
+          <div style="font-size: 14px; color: #9AA1AC">моделей в работе</div>
+        </div>
+        <div style="flex: 1 1 200px; padding: 24px 28px; border-right: 1px solid #1D2026; display: flex; flex-direction: column; gap: 4px">
+          <div style="font-family: 'Tektur', sans-serif; font-weight: 700; font-size: 28px; color: {{accent}}">$[X]k+</div>
+          <div style="font-size: 14px; color: #9AA1AC">выплачено моделям</div>
+        </div>
+        <div style="flex: 1 1 200px; padding: 24px 28px; border-right: 1px solid #1D2026; display: flex; flex-direction: column; gap: 4px">
+          <div style="font-family: 'Tektur', sans-serif; font-weight: 700; font-size: 28px; color: {{accent}}">24/7</div>
+          <div style="font-size: 14px; color: #9AA1AC">чаты без выходных</div>
+        </div>
+        <div style="flex: 1 1 200px; padding: 24px 28px; display: flex; flex-direction: column; gap: 4px">
+          <div style="font-family: 'Tektur', sans-serif; font-weight: 700; font-size: 28px; color: {{accent}}">24ч</div>
+          <div style="font-size: 14px; color: #9AA1AC">ответ на заявку</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- МАНИФЕСТ -->
+  <section style="border-bottom: 1px solid #1D2026">
+    <div style="max-width: 1160px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+      <div style="flex: 1 1 420px">
+        <h2 style="margin: 0; font-family: 'Tektur', sans-serif; font-weight: 700; font-size: 36px; line-height: 1.2">Красивая страница без системы не зарабатывает.</h2>
+      </div>
+      <div style="flex: 1 1 420px; color: #B7BEC9; font-size: 18px; display: flex; flex-direction: column; gap: 14px">
+        <p style="margin: 0">90% криейторов застревают на одном уровне не из-за контента — из-за того, что некому приводить фанатов и некому им продавать.</p>
+        <p style="margin: 0">Storm закрывает ровно это: ежедневный трафик, продажи в переписках и цены, которые растут вместе со спросом. Контент — твой. Система — наша.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- УСЛУГИ -->
+  <section id="services" style="border-bottom: 1px solid #1D2026">
+    <div style="max-width: 1160px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 40px">
+      <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: flex-end">
+        <h2 style="margin: 0; font-family: 'Tektur', sans-serif; font-weight: 700; font-size: 36px">Что мы делаем</h2>
+        <a href="#apply" style="text-decoration: none; color: {{accent}}; font-weight: 600">Оставить заявку →</a>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px">
+        <div style="flex: 1 1 340px; padding: 30px; background: #101318; border: 1px solid #1D2026; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
+          <div style="font-family: 'Tektur', sans-serif; font-size: 13px; color: {{accent}}; letter-spacing: 0.1em">01 / ТРАФИК</div>
+          <div style="font-weight: 700; font-size: 19px">Новые фанаты каждый день</div>
+          <div style="color: #9AA1AC; font-size: 15px">Reddit, X/Twitter и взаимопиар — выстроенный конвейер, который стабильно приводит подписчиков на твою страницу.</div>
+        </div>
+        <div style="flex: 1 1 340px; padding: 30px; background: #101318; border: 1px solid #1D2026; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
+          <div style="font-family: 'Tektur', sans-serif; font-size: 13px; color: {{accent}}; letter-spacing: 0.1em">02 / ПРОДАЖИ</div>
+          <div style="font-weight: 700; font-size: 19px">Чаты, которые продают</div>
+          <div style="color: #9AA1AC; font-size: 15px">Обученная команда ведёт переписки на английском 24/7 от твоего имени, по твоим правилам и границам. Ты не пишешь ни одного сообщения.</div>
+        </div>
+        <div style="flex: 1 1 340px; padding: 30px; background: #101318; border: 1px solid #1D2026; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
+          <div style="font-family: 'Tektur', sans-serif; font-size: 13px; color: {{accent}}; letter-spacing: 0.1em">03 / КОНТЕНТ</div>
+          <div style="font-weight: 700; font-size: 19px">Стратегия и сценарии</div>
+          <div style="color: #9AA1AC; font-size: 15px">Персона, ниша, шот-листы и план съёмок. Ты никогда не сидишь с вопросом «что снимать» — он всегда решён заранее.</div>
+        </div>
+        <div style="flex: 1 1 340px; padding: 30px; background: #101318; border: 1px solid #1D2026; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
+          <div style="font-family: 'Tektur', sans-serif; font-size: 13px; color: {{accent}}; letter-spacing: 0.1em">04 / ДЕНЬГИ</div>
+          <div style="font-weight: 700; font-size: 19px">Цены и аналитика</div>
+          <div style="color: #9AA1AC; font-size: 15px">Тестируем цены, форматы и рассылки, растим средний чек. Каждую неделю ты видишь отчёт: что продалось, что растёт, что дальше.</div>
+        </div>
+        <div style="flex: 1 1 340px; padding: 30px; background: #101318; border: 1px solid #1D2026; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
+          <div style="font-family: 'Tektur', sans-serif; font-size: 13px; color: {{accent}}; letter-spacing: 0.1em">05 / ЗАЩИТА</div>
+          <div style="font-weight: 700; font-size: 19px">Анонимность и DMCA</div>
+          <div style="color: #9AA1AC; font-size: 15px">Geo-блокировка твоей страны, вотермарки, мониторинг сливов и удаление украденного контента. Твои границы фиксируются письменно.</div>
+        </div>
+        <div style="flex: 1 1 340px; padding: 30px; background: #101318; border: 1px solid #1D2026; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
+          <div style="font-family: 'Tektur', sans-serif; font-size: 13px; color: {{accent}}; letter-spacing: 0.1em">06 / ПОДДЕРЖКА</div>
+          <div style="font-weight: 700; font-size: 19px">Личный менеджер</div>
+          <div style="color: #9AA1AC; font-size: 15px">Один человек на связи с тобой каждый день: план недели, обратная связь, ответы на любые вопросы на русском или украинском.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- КЕЙСЫ -->
+  <section id="cases" style="border-bottom: 1px solid #1D2026">
+    <div style="max-width: 1160px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 40px">
+      <h2 style="margin: 0; font-family: 'Tektur', sans-serif; font-weight: 700; font-size: 36px">Кейсы</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px">
+        <div style="flex: 1 1 340px; padding: 30px; background: #101318; border: 1px solid #1D2026; border-radius: 14px; display: flex; flex-direction: column; gap: 14px">
+          <div style="font-family: 'Tektur', sans-serif; font-weight: 700; font-size: 24px; color: {{accent}}">$[X] → $[Y]</div>
+          <div style="font-weight: 600">Модель [A] · ниша [укажи]</div>
+          <div style="color: #9AA1AC; font-size: 15px">[Короткая история: с чем пришла, что сделали, результат за N месяцев]</div>
+        </div>
+        <div style="flex: 1 1 340px; padding: 30px; background: #101318; border: 1px solid #1D2026; border-radius: 14px; display: flex; flex-direction: column; gap: 14px">
+          <div style="font-family: 'Tektur', sans-serif; font-weight: 700; font-size: 24px; color: {{accent}}">$[X] → $[Y]</div>
+          <div style="font-weight: 600">Модель [B] · ниша [укажи]</div>
+          <div style="color: #9AA1AC; font-size: 15px">[Короткая история: с чем пришла, что сделали, результат за N месяцев]</div>
+        </div>
+        <div style="flex: 1 1 340px; padding: 30px; background: #101318; border: 1px solid #1D2026; border-radius: 14px; display: flex; flex-direction: column; gap: 14px">
+          <div style="font-family: 'Tektur', sans-serif; font-weight: 700; font-size: 24px; color: {{accent}}">0 → $[Y]</div>
+          <div style="font-weight: 600">Модель [C] · старт с нуля</div>
+          <div style="color: #9AA1AC; font-size: 15px">[Короткая история: без опыта и аудитории, запуск с нуля, результат за N месяцев]</div>
+        </div>
+      </div>
+      <div style="font-size: 14px; color: #5F6672">Блок появится на сайте, когда будут первые реальные результаты — выдуманные цифры убивают доверие быстрее, чем их отсутствие.</div>
+    </div>
+  </section>
+
+  <!-- БЕСПЛАТНЫЙ РАЗБОР (CTA BAND) -->
+  <section id="audit" style="border-bottom: 1px solid #1D2026; background: #101318">
+    <div style="max-width: 1160px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: space-between">
+      <div style="flex: 1 1 520px; display: flex; flex-direction: column; gap: 14px">
+        <h2 style="margin: 0; font-family: 'Tektur', sans-serif; font-weight: 700; font-size: 34px">Уже ведёшь страницу сама?</h2>
+        <p style="margin: 0; color: #B7BEC9; font-size: 18px; max-width: 560px">Пришли ссылку — за 48 часов разберём твою страницу и честно скажем, где ты теряешь деньги: трафик, цены, чаты. Бесплатно и без обязательств, разбор остаётся тебе в любом случае.</p>
+      </div>
+      <a href="#apply" style="text-decoration: none; background: {{accent}}; color: #0B0D10; font-weight: 700; font-size: 18px; padding: 18px 36px; border-radius: 999px; flex-shrink: 0">Получить разбор бесплатно</a>
+    </div>
+  </section>
+
+  <!-- ПРОЦЕСС -->
+  <section id="process" style="border-bottom: 1px solid #1D2026">
+    <div style="max-width: 1160px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 40px">
+      <h2 style="margin: 0; font-family: 'Tektur', sans-serif; font-weight: 700; font-size: 36px">От заявки до первых выплат</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px">
+        <div style="flex: 1 1 250px; padding: 28px; border: 1px solid #1D2026; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
+          <div style="font-family: 'Tektur', sans-serif; font-weight: 800; font-size: 15px; color: {{accent}}">ШАГ 1 · ДЕНЬ 1</div>
+          <div style="font-weight: 700; font-size: 18px">Заявка и созвон</div>
+          <div style="color: #9AA1AC; font-size: 15px">Анкета на 2 минуты, ответ в течение 24 часов, созвон на 15–20 минут. Все условия и процент — сразу, без «обсудим потом».</div>
+        </div>
+        <div style="flex: 1 1 250px; padding: 28px; border: 1px solid #1D2026; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
+          <div style="font-family: 'Tektur', sans-serif; font-weight: 800; font-size: 15px; color: {{accent}}">ШАГ 2 · НЕДЕЛЯ 1</div>
+          <div style="font-weight: 700; font-size: 18px">Договор и образ</div>
+          <div style="color: #9AA1AC; font-size: 15px">Верификация 18+, договор, твои границы письменно. Собираем персону, нишу и план первых съёмок.</div>
+        </div>
+        <div style="flex: 1 1 250px; padding: 28px; border: 1px solid #1D2026; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
+          <div style="font-family: 'Tektur', sans-serif; font-weight: 800; font-size: 15px; color: {{accent}}">ШАГ 3 · НЕДЕЛИ 2–3</div>
+          <div style="font-weight: 700; font-size: 18px">Контент и запуск</div>
+          <div style="color: #9AA1AC; font-size: 15px">Первые съёмки по шот-листам, оформление страницы, включаем трафик и чаты.</div>
+        </div>
+        <div style="flex: 1 1 250px; padding: 28px; border: 1px solid #1D2026; border-radius: 14px; display: flex; flex-direction: column; gap: 10px">
+          <div style="font-family: 'Tektur', sans-serif; font-weight: 800; font-size: 15px; color: {{accent}}">ШАГ 4 · С МЕСЯЦА 1</div>
+          <div style="font-weight: 700; font-size: 18px">Рост и выплаты</div>
+          <div style="color: #9AA1AC; font-size: 15px">Первые продажи обычно в первый месяц, стабильный доход — со 2–3 месяца. Еженедельные отчёты, выплаты от Fansly напрямую тебе.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- КОГО ИЩЕМ -->
+  <section style="border-bottom: 1px solid #1D2026">
+    <div style="max-width: 1160px; margin: 0 auto; padding: 80px 24px; display: flex; flex-wrap: wrap; gap: 48px">
+      <div style="flex: 1 1 400px; display: flex; flex-direction: column; gap: 14px">
+        <h2 style="margin: 0; font-family: 'Tektur', sans-serif; font-weight: 700; font-size: 36px">Мы не берём всех</h2>
+        <p style="margin: 0; color: #B7BEC9; font-size: 18px">Команда вкладывает в каждую модель десятки часов в месяц, поэтому выбираем тех, с кем этот вклад сработает. Опыт не нужен. Нужна готовность работать.</p>
+      </div>
+      <div style="flex: 1 1 480px; display: flex; flex-direction: column; gap: 14px">
+        <div style="display: flex; gap: 14px; padding: 18px 22px; background: #101318; border: 1px solid #1D2026; border-radius: 12px"><span style="color: {{accent}}; font-weight: 700">✓</span><span>Тебе есть 18 лет — проверяем документы без исключений</span></div>
+        <div style="display: flex; gap: 14px; padding: 18px 22px; background: #101318; border: 1px solid #1D2026; border-radius: 12px"><span style="color: {{accent}}; font-weight: 700">✓</span><span>Готова снимать 1–2 дня в неделю, стабильно, а не «по настроению»</span></div>
+        <div style="display: flex; gap: 14px; padding: 18px 22px; background: #101318; border: 1px solid #1D2026; border-radius: 12px"><span style="color: {{accent}}; font-weight: 700">✓</span><span>Адекватные ожидания: доход строится 2–3 месяца, а не за неделю</span></div>
+        <div style="display: flex; gap: 14px; padding: 18px 22px; background: #101318; border: 1px solid #1D2026; border-radius: 12px"><span style="color: {{accent}}; font-weight: 700">✓</span><span>Решения принимаешь ты сама — мы не работаем через «посредников»</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="border-bottom: 1px solid #1D2026">
+    <div style="max-width: 1160px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 36px">
+      <h2 style="margin: 0; font-family: 'Tektur', sans-serif; font-weight: 700; font-size: 36px">Вопросы, которые задают все</h2>
+      <div style="display: flex; flex-direction: column; gap: 16px; max-width: 880px">
+        <div style="padding: 24px 28px; background: #101318; border: 1px solid #1D2026; border-radius: 12px; display: flex; flex-direction: column; gap: 8px">
+          <div style="font-weight: 700">Без опыта возьмёте?</div>
+          <div style="color: #9AA1AC; font-size: 16px">Да — большинство наших моделей начинали с нуля. Персону, стратегию и первый контент собираем вместе на онбординге.</div>
+        </div>
+        <div style="padding: 24px 28px; background: #101318; border: 1px solid #1D2026; border-radius: 12px; display: flex; flex-direction: column; gap: 8px">
+          <div style="font-weight: 700">Можно без лица?</div>
+          <div style="color: #9AA1AC; font-size: 16px">Можно. С лицом рост быстрее — это честный факт, но анонимный формат мы тоже продвигаем, плюс geo-блок закрывает твою страну от знакомых.</div>
+        </div>
+        <div style="padding: 24px 28px; background: #101318; border: 1px solid #1D2026; border-radius: 12px; display: flex; flex-direction: column; gap: 8px">
+          <div style="font-weight: 700">Какой процент?</div>
+          <div style="color: #9AA1AC; font-size: 16px">Фиксируется в договоре до старта и зависит от формата. Называем цифру на первом созвоне — до того, как ты что-либо подпишешь.</div>
+        </div>
+        <div style="padding: 24px 28px; background: #101318; border: 1px solid #1D2026; border-radius: 12px; display: flex; flex-direction: column; gap: 8px">
+          <div style="font-weight: 700">Аккаунт будет на вас?</div>
+          <div style="color: #9AA1AC; font-size: 16px">Нет. Аккаунт твой, выплаты от Fansly приходят напрямую тебе. Уходишь — страница и аудитория остаются с тобой.</div>
+        </div>
+        <div style="padding: 24px 28px; background: #101318; border: 1px solid #1D2026; border-radius: 12px; display: flex; flex-direction: column; gap: 8px">
+          <div style="font-weight: 700">Сколько я буду зарабатывать?</div>
+          <div style="color: #9AA1AC; font-size: 16px">Любой, кто называет тебе точную цифру до старта, врёт. Диапазон зависит от ниши, регулярности и месяца работы — реалистичную вилку под твой случай даём после созвона и разбора.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ФИНАЛЬНЫЙ CTA + ФОРМА -->
+  <section id="apply" style="border-bottom: 1px solid #1D2026">
+    <div style="max-width: 1160px; margin: 0 auto; padding: 88px 24px 96px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
+      <div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 18px">
+        <h2 style="margin: 0; font-family: 'Tektur', sans-serif; font-weight: 800; font-size: 44px; line-height: 1.12">Шторм начинается<br>с одной заявки</h2>
+        <p style="margin: 0; color: #B7BEC9; font-size: 18px; max-width: 480px">2 минуты. Без документов и фото. Ответим в Telegram в течение 24 часов — даже если ответ будет «мы не подходим друг другу».</p>
+        <p style="margin: 0; color: #5F6672; font-size: 15px">Быстрее напрямую: <a href="https://t.me/ВАШ_TELEGRAM">@ВАШ_TELEGRAM</a></p>
+      </div>
+      <form style="flex: 1 1 460px; display: flex; flex-direction: column; gap: 16px; background: #101318; border: 1px solid #1D2026; border-radius: 16px; padding: 34px">
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <label for="s-name" style="font-weight: 600; font-size: 15px">Имя или ник</label>
+          <input id="s-name" type="text" placeholder="Как к тебе обращаться" style="background: #0B0D10; border: 1px solid #2E333C; border-radius: 10px; padding: 13px 16px; color: #F1F3F5; font-size: 16px; font-family: 'Golos Text', sans-serif">
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <label for="s-tg" style="font-weight: 600; font-size: 15px">Telegram</label>
+          <input id="s-tg" type="text" placeholder="@username" style="background: #0B0D10; border: 1px solid #2E333C; border-radius: 10px; padding: 13px 16px; color: #F1F3F5; font-size: 16px; font-family: 'Golos Text', sans-serif">
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <label for="s-exp" style="font-weight: 600; font-size: 15px">Опыт</label>
+          <sc-raw-select id="s-exp" style="background: #0B0D10; border: 1px solid #2E333C; border-radius: 10px; padding: 13px 16px; color: #F1F3F5; font-size: 16px; font-family: 'Golos Text', sans-serif">
+            <option>Без опыта</option>
+            <option>Веду Fansly / OnlyFans сама</option>
+            <option>Вебкам</option>
+            <option>Другое</option>
+          </sc-raw-select>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <label for="s-page" style="font-weight: 600; font-size: 15px">Ссылка на страницу или соцсети <span style="color: #5F6672; font-weight: 400">(если есть)</span></label>
+          <input id="s-page" type="text" placeholder="Для бесплатного разбора" style="background: #0B0D10; border: 1px solid #2E333C; border-radius: 10px; padding: 13px 16px; color: #F1F3F5; font-size: 16px; font-family: 'Golos Text', sans-serif">
+        </div>
+        <div style="display: flex; gap: 10px; align-items: flex-start">
+          <input id="s-age" type="checkbox" style="width: 18px; height: 18px; margin-top: 3px">
+          <label for="s-age" style="font-size: 15px; color: #9AA1AC">Мне есть 18 лет</label>
+        </div>
+        <div style="display: flex; gap: 10px; align-items: flex-start">
+          <input id="s-gdpr" type="checkbox" style="width: 18px; height: 18px; margin-top: 3px">
+          <label for="s-gdpr" style="font-size: 15px; color: #9AA1AC">Согласна на обработку данных для связи (<a href="#privacy">политика</a>)</label>
+        </div>
+        <button type="button" style="background: {{accent}}; color: #0B0D10; font-weight: 700; font-size: 17px; padding: 17px; border: none; border-radius: 999px; font-family: 'Golos Text', sans-serif; cursor: pointer; margin-top: 4px">Отправить заявку →</button>
+        <div style="font-size: 13px; color: #5F6672">Заявка ни к чему не обязывает. Данные не передаём никому.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="privacy">
+    <div style="max-width: 1160px; margin: 0 auto; padding: 30px 24px; display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; align-items: center; font-size: 14px; color: #5F6672">
+      <div style="display: flex; align-items: center; gap: 10px">
+        <svg width="20" height="20" sc-camel-view-box="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M6 10 H26" stroke="#5F6672" stroke-width="3" stroke-linecap="round"></path>
+          <path d="M11 16 H26" stroke="#5F6672" stroke-width="3" stroke-linecap="round"></path>
+          <path d="M6 22 H21" stroke="#5F6672" stroke-width="3" stroke-linecap="round"></path>
+        </svg>
+        <span>© 2026 Storm Agency</span>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 24px">
+        <span>Только 18+</span>
+        <a href="#privacy">Политика приватности</a>
+        <a href="https://t.me/ВАШ_TELEGRAM">Telegram</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#D7F75B&quot;,&quot;options&quot;:[&quot;#D7F75B&quot;,&quot;#6A95FF&quot;,&quot;#4FD8EB&quot;,&quot;#FF8A5B&quot;]},&quot;$preview&quot;:{&quot;width&quot;:1360,&quot;height&quot;:5600}}">
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#D7F75B' };
+  }
+}
+</script>
+
+
+</body></html>
