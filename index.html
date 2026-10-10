@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Storm Agency — менеджмент для Fansly-криейторов</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Tektur:wght@700;800&family=Zen+Dots&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body id="top">
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="logo"><span>Storm</span><span>Agency</span></a>
+    <nav class="nav-links">
+      <a href="#services" class="sw-link"><span>что делаем</span><span>что делаем</span></a>
+      <a href="#process" class="sw-link"><span>процесс</span><span>процесс</span></a>
+      <a href="#faq" class="sw-link"><span>faq</span><span>faq</span></a>
+    </nav>
+    <a href="#apply" class="sw-btn btn-light">оставить заявку <span class="dot"></span></a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-stage">
+    <canvas id="heart" aria-hidden="true"></canvas>
+    <h1><span><span>Storm</span></span><span><span>Agency</span></span></h1>
+  </div>
+  <div class="hero-row">
+    <p>Контент — твой. Система — наша. Трафик, продажи в чатах, цены и защита — на команде. Ты снимаешь 1–2 дня в неделю.</p>
+    <div class="hero-cta">
+      <a href="#apply" class="sw-btn btn-accent">начать зарабатывать</a>
+      <a href="#audit" class="sw-btn btn-ghost">бесплатный разбор</a>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="stat sw-card"><b><span data-count="24">0</span>/7</b><span>чаты без выходных</span></div>
+    <div class="stat sw-card"><b><span data-count="24">0</span>ч</b><span>ответ на заявку</span></div>
+    <div class="stat sw-card"><b>1–2 <small>дня</small></b><span>съёмок в неделю — остальное на нас</span></div>
+    <div class="stat sw-card accent"><b><span data-count="48">0</span>ч</b><span>бесплатный разбор страницы</span></div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <div><span>трафик</span><i>·</i><span>продажи</span><i>·</i><span>контент</span><i>·</i><span>защита</span><i>·</i><span>аналитика</span><i>·</i><span>менеджер</span><i>·</i></div>
+    <div><span>трафик</span><i>·</i><span>продажи</span><i>·</i><span>контент</span><i>·</i><span>защита</span><i>·</i><span>аналитика</span><i>·</i><span>менеджер</span><i>·</i></div>
+  </div>
+</div>
+
+<section class="manifest wrap" id="manifest">
+  <div class="manifest-row">
+    <div class="kicker"><span class="dot"></span>о нас</div>
+    <p class="manifest-text" id="manifest-text">Красивая страница без системы не зарабатывает. Контент — твой. Система — наша.</p>
+  </div>
+  <div class="manifest-sub" data-reveal>
+    <p>90% криейторов застревают на одном уровне не из-за контента — из-за того, что некому приводить фанатов и некому им продавать.</p>
+    <p>Storm закрывает ровно это: ежедневный трафик, продажи в переписках и цены, которые растут вместе со спросом.</p>
+  </div>
+</section>
+
+<section class="services wrap" id="services">
+  <div class="sec-head" data-reveal>
+    <h2>что мы<br>делаем</h2>
+    <a href="#apply" class="sw-link accent" style="font-weight:600;font-size:16px"><span>оставить заявку →</span><span>оставить заявку →</span></a>
+  </div>
+  <div class="svc-list">
+    <div class="svc sw-card" style="top:96px"><div class="svc-num">01 / трафик</div><div class="svc-body"><div class="svc-title">Новые фанаты каждый день</div><div class="svc-text">Reddit, X/Twitter и взаимопиар — выстроенный конвейер, который стабильно приводит подписчиков на твою страницу.</div></div><div class="heart3d"><span>♥</span></div></div>
+    <div class="svc sw-card" style="top:112px"><div class="svc-num">02 / продажи</div><div class="svc-body"><div class="svc-title">Чаты, которые продают</div><div class="svc-text">Обученная команда ведёт переписки на английском 24/7 от твоего имени, по твоим правилам и границам. Ты не пишешь ни одного сообщения.</div></div><div class="heart3d"><span>♥</span></div></div>
+    <div class="svc sw-card" style="top:128px"><div class="svc-num">03 / контент</div><div class="svc-body"><div class="svc-title">Стратегия и сценарии</div><div class="svc-text">Персона, ниша, шот-листы и план съёмок. Ты никогда не сидишь с вопросом «что снимать» — он всегда решён заранее.</div></div><div class="heart3d"><span>♥</span></div></div>
+    <div class="svc sw-card" style="top:144px"><div class="svc-num">04 / деньги</div><div class="svc-body"><div class="svc-title">Цены и аналитика</div><div class="svc-text">Тестируем цены, форматы и рассылки, растим средний чек. Каждую неделю ты видишь отчёт: что продалось, что растёт, что дальше.</div></div><div class="heart3d"><span>♥</span></div></div>
+    <div class="svc sw-card" style="top:160px"><div class="svc-num">05 / защита</div><div class="svc-body"><div class="svc-title">Анонимность и DMCA</div><div class="svc-text">Geo-блокировка твоей страны, вотермарки, мониторинг сливов и удаление украденного контента. Твои границы фиксируются письменно.</div></div><div class="heart3d"><span>♥</span></div></div>
+    <div class="svc sw-card accent" style="top:176px"><div class="svc-num">06 / поддержка</div><div class="svc-body"><div class="svc-title">Личный менеджер</div><div class="svc-text">Один человек на связи с тобой каждый день: план недели, обратная связь, ответы на любые вопросы на русском или украинском.</div></div><div class="heart3d"><span>♥</span></div></div>
+  </div>
+</section>
+
+<section class="audit" id="audit">
+  <div class="audit-box" data-reveal>
+    <div class="audit-body">
+      <h2>уже ведёшь<br>страницу сама?</h2>
+      <p>Пришли ссылку — за 48 часов разберём твою страницу и честно скажем, где ты теряешь деньги. Бесплатно и без обязательств, разбор остаётся тебе в любом случае.</p>
+      <div class="chips"><span>трафик</span><span>цены</span><span>чаты</span><span>оформление</span></div>
+    </div>
+    <a href="#apply" class="sw-btn btn-dark">получить разбор бесплатно</a>
+  </div>
+</section>
+
+<section class="process wrap" id="process">
+  <h2 data-reveal>от заявки<br>до первых выплат</h2>
+  <div class="steps">
+    <div class="step" data-reveal><div class="step-n">01</div><div class="step-when">день 1</div><div class="step-title">Заявка и созвон</div><div class="step-text">Анкета на 2 минуты, ответ в течение 24 часов, созвон на 15–20 минут. Все условия и процент — сразу, без «обсудим потом».</div></div>
+    <div class="step" data-reveal style="transition-delay:.12s"><div class="step-n">02</div><div class="step-when">неделя 1</div><div class="step-title">Договор и образ</div><div class="step-text">Верификация 18+, договор, твои границы письменно. Собираем персону, нишу и план первых съёмок.</div></div>
+    <div class="step" data-reveal style="transition-delay:.24s"><div class="step-n">03</div><div class="step-when">недели 2–3</div><div class="step-title">Контент и запуск</div><div class="step-text">Первые съёмки по шот-листам, оформление страницы, включаем трафик и чаты.</div></div>
+    <div class="step" data-reveal style="transition-delay:.36s"><div class="step-n">04</div><div class="step-when">с месяца 1</div><div class="step-title">Рост и выплаты</div><div class="step-text">Первые продажи обычно в первый месяц, стабильный доход — со 2–3 месяца. Еженедельные отчёты, выплаты от Fansly напрямую тебе.</div></div>
+  </div>
+</section>
+
+<section class="who">
+  <div class="wrap">
+    <div class="who-intro" data-reveal>
+      <h2>мы не<br>берём всех</h2>
+      <p>Команда вкладывает в каждую модель десятки часов в месяц, поэтому выбираем тех, с кем этот вклад сработает. Опыт не нужен. Нужна готовность работать.</p>
+    </div>
+    <div class="criteria">
+      <div class="crit sw-card" data-reveal><b>01</b><span>Тебе есть 18 лет — проверяем документы без исключений</span></div>
+      <div class="crit sw-card" data-reveal style="transition-delay:.1s"><b>02</b><span>Готова снимать 1–2 дня в неделю, стабильно, а не «по настроению»</span></div>
+      <div class="crit sw-card" data-reveal style="transition-delay:.2s"><b>03</b><span>Адекватные ожидания: доход строится 2–3 месяца, а не за неделю</span></div>
+      <div class="crit sw-card" data-reveal style="transition-delay:.3s"><b>04</b><span>Решения принимаешь ты сама — мы не работаем через «посредников»</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <h2 data-reveal>вопросы,<br>которые<br>задают все</h2>
+    <div class="faq-list" data-reveal>
+      <div class="faq-item open"><button class="faq-q" type="button"><span>Без опыта возьмёте?</span><i>+</i></button><div class="faq-a"><div><p>Да — большинство наших моделей начинали с нуля. Персону, стратегию и первый контент собираем вместе на онбординге.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" type="button"><span>Можно без лица?</span><i>+</i></button><div class="faq-a"><div><p>Можно. С лицом рост быстрее — это честный факт, но анонимный формат мы тоже продвигаем, плюс geo-блок закрывает твою страну от знакомых.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" type="button"><span>Какой процент?</span><i>+</i></button><div class="faq-a"><div><p>Фиксируется в договоре до старта и зависит от формата. Называем цифру на первом созвоне — до того, как ты что-либо подпишешь.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" type="button"><span>Аккаунт будет на вас?</span><i>+</i></button><div class="faq-a"><div><p>Нет. Аккаунт твой, выплаты от Fansly приходят напрямую тебе. Уходишь — страница и аудитория остаются с тобой.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" type="button"><span>Сколько я буду зарабатывать?</span><i>+</i></button><div class="faq-a"><div><p>Любой, кто называет тебе точную цифру до старта, врёт. Диапазон зависит от ниши, регулярности и месяца работы — реалистичную вилку под твой случай даём после созвона и разбора.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="apply" id="apply">
+  <div class="wrap">
+    <div class="apply-intro" data-reveal>
+      <h2>шторм<br>начинается<br>с <em>одной</em><br>заявки</h2>
+      <p>2 минуты. Без документов и фото. Ответим в Telegram в течение 24 часов — даже если ответ будет «мы не подходим друг другу».</p>
+    </div>
+    <form class="form" id="form" data-reveal novalidate>
+      <div class="sent"><b>✓</b><h3>Заявка у нас</h3><p>Ответим в Telegram в течение 24 часов.</p></div>
+      <div class="fields" style="display:contents">
+        <div class="field"><label for="s-name">Имя или ник</label><input id="s-name" name="name" type="text" required placeholder="Как к тебе обращаться"></div>
+        <div class="field"><label for="s-tg">Telegram</label><input id="s-tg" name="tg" type="text" required placeholder="@username"></div>
+        <div class="field"><div class="lbl">Опыт</div>
+          <div class="exp" id="exp"><button type="button" class="on">Без опыта</button><button type="button">Веду Fansly / OnlyFans сама</button><button type="button">Вебкам</button><button type="button">Другое</button></div>
+        </div>
+        <div class="field"><label for="s-page">Ссылка на страницу или соцсети <small>(если есть)</small></label><input id="s-page" name="page" type="text" placeholder="Для бесплатного разбора"></div>
+        <label class="check"><input type="checkbox" id="c-age" required>Мне есть 18 лет</label>
+        <label class="check"><input type="checkbox" id="c-pd" required><span>Согласна на обработку данных для связи (<a href="#privacy">политика</a>)</span></label>
+        <button type="submit" class="sw-btn submit" id="submit">отправить заявку →</button>
+        <div class="err" id="err"></div>
+        <div class="note">Заявка ни к чему не обязывает. Данные не передаём никому.</div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer id="privacy">
+  <div class="foot-grid">
+    <div class="foot-col"><h4>навигация</h4>
+      <a href="#services" class="sw-link"><span>что делаем</span><span>что делаем</span></a>
+      <a href="#process" class="sw-link"><span>процесс</span><span>процесс</span></a>
+      <a href="#faq" class="sw-link"><span>faq</span><span>faq</span></a>
+    </div>
+    <div class="foot-col"><h4>связь</h4>
+      <a href="https://t.me/locurice" class="sw-link"><span>telegram</span><span>telegram</span></a>
+      <a href="#apply" class="sw-link"><span>оставить заявку</span><span>оставить заявку</span></a>
+    </div>
+    <div class="foot-col"><h4>важно</h4><span>Только 18+</span><a href="#privacy">Политика приватности</a></div>
+  </div>
+  <div class="foot-big" data-reveal aria-hidden="true">storm</div>
+  <div class="foot-bottom"><span>© 2026 Storm Agency. Fansly management.</span><span>Контент — твой. Система — наша.</span></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
